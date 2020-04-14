@@ -1,0 +1,495 @@
+@charset "UTF-8";
+
+/* header */
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  padding: 15px 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  color: #333;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left__content {
+  opacity: 0.7;
+  transition: all .3s;
+}
+
+.header-left__content:after {
+  transition: all .3s;
+}
+
+.header-left__content:hover {
+  opacity: 1;
+}
+
+.fas fa-bolt {
+  content: "\f0e7";
+  font-family:'Font Awesome 5 Brands';
+  font-weight:900;
+}
+
+.header-right {
+  background-color: #74cfae;
+}
+
+a.header-right__content {
+  display: block;
+  padding: 14px 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px; 
+  line-height: 20px;
+  transition: all .3s;
+}
+
+a.header-right__content:after {
+  transition: all .3s;
+}
+
+a.header-right__content:hover{
+  color: #333;
+}
+
+.header-right__sp {
+  display: none;
+}
+
+/* theme */
+
+.title {
+  padding-top: 40px;
+  background-color: #f2f2f2;
+}
+
+.title-inner {
+  text-align: center;
+  padding: 250px 0;
+}
+
+h1.title {
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+  margin-bottom: 20px;
+}
+
+h2.sub-title {
+  font-size: 30px;
+  color: #c0c0c0;
+}
+
+/* what we can do */
+
+.can {
+  background-color: #74cfae;
+  text-align: center;
+}
+
+.can-inner {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.can-left {
+  padding: 0 100px;
+}
+
+.can-right {
+  color: #fff;
+  font-family: "Lato";
+  padding: 25px;
+}
+
+.can-title {
+  font-size: 24px;
+  padding-bottom: 35px;
+}
+
+.can-text {
+  font-size: 20px;
+}
+
+/* our latest work */
+
+.works {
+  background-color: #f2f2f2;
+}
+
+.works-title {
+  font-size: 24px;
+  padding: 60px 0 40px 0;
+}
+
+.works-contents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.works-content {
+  margin-bottom: 70px;
+  margin-right: 100px;
+}
+
+.works-content:nth-child(3) {
+  margin-right: 0;
+}
+
+.works-content:nth-child(6) {
+  margin-right: 0;
+}
+
+.works-image {
+  display: block;
+}
+
+.works-image {
+  opacity: 0.7;
+  transition: all .3s;
+}
+
+.works-image:after {
+  transition: all .3s;
+}
+
+.works-image:hover {
+  opacity: 1;
+}
+
+.works-under-inner {
+  padding: 10px 0 70px 200px;
+}
+
+.works-under-contents {
+  display: flex;
+}
+
+.works-text {
+  width: 50%;
+  padding-right: 90px;
+  line-height: 25px;
+}
+
+a.works-mail-button {
+  display: block;
+  background-color: #74cfae;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 14px 20px;
+  transition: all .3s;
+}
+
+a.works-mail-button:after {
+  transition: all .3s;
+}
+
+a.works-mail-button:hover{
+  color: #333;
+}
+
+/* OUR SKILLS */
+
+.skills {
+  background-color: #4e4e4e;
+}
+
+.skills-title {
+  padding: 70px;
+  color: #fff;
+}
+
+.skills-graphs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills-graph {
+  padding: 0 60px 100px;
+}
+
+.skills-text {
+  color: #fff;
+  padding-top: 20px;
+}
+
+/* sns */
+
+.sns {
+  background-color: #f2f2f2;
+}
+
+
+.fab fa-facebook-f {
+  content: "\f39e";
+  font-family:'Font Awesome 5 Brands';
+  font-weight:900;
+}
+
+.fab fa-dribbble {
+  content: "\f17d";
+  font-family:'Font Awesome 5 Brands';
+  font-weight:900;
+}
+
+.fab fa-twitter {
+  content: "\f099";
+  font-family:'Font Awesome 5 Brands';
+  font-weight:900;
+}
+
+.fal fa-envelope {
+  content: "\f0e0";
+  font-family:'Font Awesome 5 Brands';
+  font-weight:900;
+}
+
+.sns-inner {
+  width: 720px;
+  padding: 200px 0;
+}
+
+.sns-contents {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sns-content {
+  padding: 30px;
+  width: 125px;
+  transition: all .3s;
+}
+
+a.sns-icon {
+  color: #74cfae;
+}
+
+.sns-content:after {
+  transition: all .3s;
+}
+
+.sns-content:hover {
+  background-color: #fff;
+}
+
+/* footer */
+
+.footer {
+  background-color: #74cfae;
+}
+
+.footer-text {
+  width: 30%;
+  margin:0 0 0 auto;
+  color: #fff;
+  padding: 20px 0 25px 0;
+}
+
+
+
+/* responsive */
+
+
+@media screen and (max-width:767px) {
+
+  .inner {
+    width: 97%;
+  }
+
+  a.header-right__content {
+    display:none;
+  }
+
+  .header-right__sp {
+    display: block;
+  }
+
+  .header-right__sp__content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .fas fa-bars {
+    content: "\f0c9";
+    font-family:'Font Awesome 5 Brands';
+    font-weight:900;
+  }
+
+  .title-inner {
+    padding: 160px 0;
+  }
+
+  h1.title {
+    font-size: 80px;
+  }
+
+  .can-inner {
+    flex-direction: column;
+  }
+
+  .can-text {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .works-contents {
+    flex-direction: column;
+  }
+
+  .works-content {
+    margin: 0;
+  }
+
+  .works-content:nth-child(3) {
+    margin-bottom: 80px;
+  }
+  
+  .works-content:nth-child(6) {
+    margin-bottom: 80px;
+  }
+
+  .works-under-inner {
+    padding: 0;
+    padding-bottom: 70px;
+  }
+
+  .works-under-contents {
+    flex-direction: column;
+  }
+
+  .works-text {
+    width: 65%;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 40px;
+    line-height: 25px;
+  }
+
+  a.works-mail-button {
+    display: inline-block;
+  }
+
+  .skills-graphs {
+    flex-direction: column;
+  }
+
+  .sns-inner {
+    padding: 50px 0;
+  }
+
+  .sns-contents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sns-content {
+    padding: 30px 150px;
+  }
+
+  .footer-text {
+    margin: 0 auto;
+  }
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+
+  .inner {
+    width: 97%;
+  }
+
+  .can-inner {
+    flex-direction: column;
+  }
+
+  .can-text {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .works-contents {
+    flex-direction: column;
+  }
+
+  .works-content {
+    margin: 0;
+  }
+
+  .works-content:nth-child(3) {
+    margin-bottom: 80px;
+  }
+  
+  .works-content:nth-child(6) {
+    margin-bottom: 80px;
+  }
+
+  .works-under-inner {
+    padding: 0;
+    padding-bottom: 70px;
+  }
+
+  .works-under-contents {
+    flex-direction: column;
+  }
+
+  .works-text {
+    width: 65%;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 40px;
+    line-height: 25px;
+  }
+
+  a.works-mail-button {
+    display: inline-block;
+  }
+
+  .skills-graphs {
+    flex-direction: column;
+  }
+
+  .sns-contents {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+}
+
+/* @media screen and (min-width:1200px) {
+  pc用のcssを記述
+ } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
