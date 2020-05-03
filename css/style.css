@@ -46,7 +46,7 @@
 }
 
 a.header-right__content {
-  display: block;
+  display: inline-block;
   padding: 14px 12px;
   color: #fff;
   text-decoration: none;
@@ -70,7 +70,7 @@ a.header-right__content:hover{
 /* theme */
 
 .title {
-  padding-top: 40px;
+  padding-top: 78px;
   background-color: #f2f2f2;
 }
 
@@ -79,7 +79,7 @@ a.header-right__content:hover{
   padding: 250px 0;
 }
 
-h1.title {
+h1.main-title {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
@@ -141,7 +141,7 @@ h2.sub-title {
 }
 
 .works-content {
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   margin-right: 100px;
 }
 
@@ -171,11 +171,14 @@ h2.sub-title {
 }
 
 .works-under-inner {
-  padding: 10px 0 70px 200px;
+  padding: 10px;
+  padding-bottom: 70px;
 }
 
 .works-under-contents {
+  
   display: flex;
+  justify-content: center;
 }
 
 .works-text {
@@ -185,7 +188,7 @@ h2.sub-title {
 }
 
 a.works-mail-button {
-  display: block;
+  display: inline-block;
   background-color: #74cfae;
   color: #fff;
   text-decoration: none;
@@ -211,6 +214,7 @@ a.works-mail-button:hover{
 .skills-title {
   padding: 70px;
   color: #fff;
+  font-size: 24px;
 }
 
 .skills-graphs {
@@ -259,13 +263,12 @@ a.works-mail-button:hover{
 }
 
 .sns-inner {
-  width: 720px;
   padding: 200px 0;
 }
 
 .sns-contents {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .sns-content {
