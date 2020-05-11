@@ -27,10 +27,6 @@
   transition: all .3s;
 }
 
-.header-left__content:after {
-  transition: all .3s;
-}
-
 .header-left__content:hover {
   opacity: 1;
 }
@@ -55,10 +51,6 @@ a.header-right__content {
   transition: all .3s;
 }
 
-a.header-right__content:after {
-  transition: all .3s;
-}
-
 a.header-right__content:hover{
   color: #333;
 }
@@ -75,7 +67,6 @@ a.header-right__content:hover{
 }
 
 .title-inner {
-  text-align: center;
   padding: 250px 0;
 }
 
@@ -95,13 +86,11 @@ h2.sub-title {
 
 .can {
   background-color: #74cfae;
-  text-align: center;
 }
 
 .can-inner {
   padding-top: 50px;
   display: flex;
-  justify-content: space-around;
 }
 
 .can-left {
@@ -136,7 +125,6 @@ h2.sub-title {
 
 .works-contents {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -151,10 +139,6 @@ h2.sub-title {
 
 .works-content:nth-child(6) {
   margin-right: 0;
-}
-
-.works-image {
-  display: block;
 }
 
 .works-image {
@@ -223,12 +207,13 @@ a.works-mail-button:hover{
 }
 
 .skills-graph {
-  padding: 0 60px 100px;
+  padding: 0 60px;
 }
 
 .skills-text {
   color: #fff;
   padding-top: 20px;
+  padding-bottom: 100px;
 }
 
 /* sns */
@@ -398,10 +383,11 @@ a.sns-icon {
   .sns-contents {
     flex-direction: column;
     align-items: center;
+    padding: 0 15px;
   }
 
   .sns-content {
-    padding: 30px 150px;
+    width: 90%;
   }
 
   .footer-text {
@@ -465,6 +451,10 @@ a.sns-icon {
 
   .skills-graphs {
     flex-direction: column;
+  }
+
+  .skills-text {
+    padding-bottom: 88px;
   }
 
   .sns-contents {
