@@ -376,15 +376,15 @@ body {
   .sns-container {
     flex-direction: column;
     align-items: center;
-    padding: 0 15px;
   }
 
   .sns-icon {
-    width: 90%;
+    width: 100%;
   }
 
   .sns-icon-link {
-    width: 90% ;
+    padding: 30px 0;
+    width: 100%;
   }
 
 
