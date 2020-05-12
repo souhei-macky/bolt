@@ -45,7 +45,7 @@ body {
   background-color: #74cfae;
 }
 
-a.header-right__content {
+.header-right__content {
   display: inline-block;
   padding: 14px 12px;
   color: #fff;
@@ -55,7 +55,7 @@ a.header-right__content {
   transition: all .3s;
 }
 
-a.header-right__content:hover{
+.header-right__content:hover{
   color: #333;
 }
 
@@ -286,7 +286,7 @@ a.header-right__content:hover{
   justify-content: center;
 }
 
-a.sns-icon {
+.sns-icon {
   padding: 30px;
   width: 125px;
   transition: all .3s;
@@ -324,7 +324,7 @@ a.sns-icon {
     width: 97%;
   }
 
-  a.header-right__content {
+  .header-right__content {
     display:none;
   }
 
