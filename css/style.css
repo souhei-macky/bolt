@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+body {
+  font-family: Lato;
+  color: #333;
+}
+
 /* header */
 
 .header {
@@ -13,8 +18,6 @@
 .inner {
   width: 1100px;
   margin: 0 auto;
-  text-align: center;
-  color: #333;
 }
 
 .header-inner {
@@ -23,6 +26,7 @@
 }
 
 .header-left__content {
+  color: #333;
   opacity: 0.7;
   transition: all .3s;
 }
@@ -61,8 +65,11 @@ a.header-right__content:hover{
 
 /* theme */
 
-.title {
+.main {
   padding-top: 78px;
+}
+
+.title {
   background-color: #f2f2f2;
 }
 
@@ -70,14 +77,19 @@ a.header-right__content:hover{
   padding: 250px 0;
 }
 
-h1.main-title {
+.title-container {
+  text-align: center;
+  font-family: Raleway;
+}
+
+.main-title {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
   margin-bottom: 20px;
 }
 
-h2.sub-title {
+.title-text {
   font-size: 30px;
   color: #c0c0c0;
 }
@@ -90,7 +102,11 @@ h2.sub-title {
 
 .can-inner {
   padding-top: 50px;
+}
+
+.can-container {
   display: flex;
+  text-align: center;
 }
 
 .can-left {
@@ -99,17 +115,18 @@ h2.sub-title {
 
 .can-right {
   color: #fff;
-  font-family: "Lato";
-  padding: 25px;
+  padding: 20px;
 }
 
 .can-title {
   font-size: 24px;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
+  font-family: Raleway;
 }
 
 .can-text {
   font-size: 20px;
+  line-height: 25px;
 }
 
 /* our latest work */
@@ -118,9 +135,19 @@ h2.sub-title {
   background-color: #f2f2f2;
 }
 
+.works-inner {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.works-container {
+  text-align: center;
+}
+
 .works-title {
+  font-family: Raleway;
   font-size: 24px;
-  padding: 60px 0 40px 0;
+  margin-bottom: 40px;
 }
 
 .works-contents {
@@ -129,16 +156,15 @@ h2.sub-title {
 }
 
 .works-content {
-  margin-bottom: 80px;
-  margin-right: 100px;
+  margin-left: 100px;
 }
 
-.works-content:nth-child(3) {
-  margin-right: 0;
+.works-content:nth-child(3n-2) {
+  margin-left: 0;
 }
 
-.works-content:nth-child(6) {
-  margin-right: 0;
+.works-content:nth-child(n+4) {
+  margin-top: 80px;
 }
 
 .works-image {
@@ -154,38 +180,29 @@ h2.sub-title {
   opacity: 1;
 }
 
-.works-under-inner {
-  padding: 10px;
-  padding-bottom: 70px;
-}
-
 .works-under-contents {
-  
+  margin-top: 90px;
   display: flex;
   justify-content: center;
 }
 
 .works-text {
-  width: 50%;
-  padding-right: 90px;
+  width: 460px;
   line-height: 25px;
 }
 
-a.works-mail-button {
+.works-mail-button {
   display: inline-block;
   background-color: #74cfae;
   color: #fff;
   text-decoration: none;
   font-size: 12px;
   padding: 14px 20px;
+  margin-left: 90px;
   transition: all .3s;
 }
 
-a.works-mail-button:after {
-  transition: all .3s;
-}
-
-a.works-mail-button:hover{
+.works-mail-button:hover{
   color: #333;
 }
 
@@ -195,10 +212,20 @@ a.works-mail-button:hover{
   background-color: #4e4e4e;
 }
 
+.skills-inner {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.skills-container {
+  text-align: center;
+}
+
 .skills-title {
-  padding: 70px;
   color: #fff;
   font-size: 24px;
+  font-family: Raleway;
+  margin-bottom: 70px;
 }
 
 .skills-graphs {
@@ -207,13 +234,16 @@ a.works-mail-button:hover{
 }
 
 .skills-graph {
-  padding: 0 60px;
+  margin-left: 180px;
+}
+
+.skills-graph:first-child {
+  margin-left: 0;
 }
 
 .skills-text {
   color: #fff;
-  padding-top: 20px;
-  padding-bottom: 100px;
+  margin-top: 20px;
 }
 
 /* sns */
@@ -221,7 +251,6 @@ a.works-mail-button:hover{
 .sns {
   background-color: #f2f2f2;
 }
-
 
 .fab fa-facebook-f {
   content: "\f39e";
@@ -251,26 +280,20 @@ a.works-mail-button:hover{
   padding: 200px 0;
 }
 
-.sns-contents {
+.sns-container {
+  text-align: center;
   display: flex;
   justify-content: center;
 }
 
-.sns-content {
+a.sns-icon {
   padding: 30px;
   width: 125px;
   transition: all .3s;
-}
-
-a.sns-icon {
   color: #74cfae;
 }
 
-.sns-content:after {
-  transition: all .3s;
-}
-
-.sns-content:hover {
+.sns-icon:hover {
   background-color: #fff;
 }
 
@@ -280,11 +303,14 @@ a.sns-icon {
   background-color: #74cfae;
 }
 
+.footer-inner {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
 .footer-text {
-  width: 30%;
-  margin:0 0 0 auto;
+  text-align: right;
   color: #fff;
-  padding: 20px 0 25px 0;
 }
 
 
@@ -307,6 +333,7 @@ a.sns-icon {
   }
 
   .header-right__sp__content {
+    color: #ddd;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -322,11 +349,11 @@ a.sns-icon {
     padding: 160px 0;
   }
 
-  h1.title {
+  .title {
     font-size: 80px;
   }
 
-  .can-inner {
+  .can-container {
     flex-direction: column;
   }
 
@@ -343,17 +370,12 @@ a.sns-icon {
     margin: 0;
   }
 
-  .works-content:nth-child(3) {
-    margin-bottom: 80px;
-  }
-  
-  .works-content:nth-child(6) {
-    margin-bottom: 80px;
+  .works-content:nth-child(n+4) {
+    margin-top: 0;
   }
 
-  .works-under-inner {
-    padding: 0;
-    padding-bottom: 70px;
+  .works-content:nth-child(4n) {
+    margin-top: 80px;
   }
 
   .works-under-contents {
@@ -363,36 +385,41 @@ a.sns-icon {
   .works-text {
     width: 65%;
     margin: 0 auto;
-    padding: 0;
-    padding-bottom: 40px;
     line-height: 25px;
   }
 
-  a.works-mail-button {
-    display: inline-block;
+  .works-mail-button {
+    margin-top: 50px;
   }
 
   .skills-graphs {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-graph {
+    margin: 0;
+    margin-top: 100px;
+  }
+
+  .skills-graph:first-child {
+    margin-top: 0;
   }
 
   .sns-inner {
     padding: 50px 0;
   }
 
-  .sns-contents {
+  .sns-container {
     flex-direction: column;
     align-items: center;
     padding: 0 15px;
   }
 
-  .sns-content {
-    width: 90%;
+  .sns-icon {
+    
   }
 
-  .footer-text {
-    margin: 0 auto;
-  }
 }
 
 
@@ -420,12 +447,16 @@ a.sns-icon {
     margin: 0;
   }
 
-  .works-content:nth-child(3) {
-    margin-bottom: 80px;
+  .works-content:nth-child(n+4) {
+    margin-top: 0;
   }
-  
-  .works-content:nth-child(6) {
-    margin-bottom: 80px;
+
+  .works-content:nth-child(4n) {
+    margin-top: 80px;
+  }
+
+  .works-under-contents {
+    flex-direction: column;
   }
 
   .works-under-inner {
@@ -440,27 +471,25 @@ a.sns-icon {
   .works-text {
     width: 65%;
     margin: 0 auto;
-    padding: 0;
-    padding-bottom: 40px;
     line-height: 25px;
   }
 
-  a.works-mail-button {
-    display: inline-block;
+  .works-mail-button {
+    margin-top: 50px;
   }
 
   .skills-graphs {
     flex-direction: column;
+    align-items: center;
   }
 
-  .skills-text {
-    padding-bottom: 88px;
+  .skills-graph {
+    margin: 0;
+    margin-top: 88px;
   }
 
-  .sns-contents {
-    width: 70%;
-    margin: 0 auto;
-    padding: 30px;
+  .skills-graph:first-child {
+    margin-top: 0;
   }
 
 }
