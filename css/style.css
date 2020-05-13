@@ -9,6 +9,15 @@ body {
   font-family: Raleway;
 }
 
+a {
+  display: inline-block;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+
 /* header */
 
 .header {
@@ -46,7 +55,6 @@ body {
 }
 
 .header-right__content {
-  display: inline-block;
   padding: 14px 12px;
   color: #fff;
   text-decoration: none;
@@ -164,17 +172,12 @@ body {
 }
 
 .works-link {
-  display: inline-block;
   opacity: .7;
   transition: all .3s;
 }
 
 .works-link:hover {
   opacity: 1;
-}
-
-.works-image {
-  vertical-align: bottom;
 }
 
 .works-under-contents {
@@ -189,7 +192,6 @@ body {
 }
 
 .works-mail-button {
-  display: inline-block;
   background-color: #74cfae;
   color: #fff;
   text-decoration: none;
